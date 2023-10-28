@@ -1,0 +1,26 @@
+.loginContainer {
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem 0 1rem;
+}
+
+h3 {
+    font-style: italic;
+    margin: 2rem;
+    text-align: center;
+}
+
+.authBtn {
+    background-color: rgb(31, 31, 243);
+    color: aliceblue;
+    width: 100%;
+    padding: .5rem;
+    margin-top: .9rem;
+    border-radius: 1rem;
+}
+
+.authBtn:hover {
+    background-color: rgb(60, 60, 182);
+}

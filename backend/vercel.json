@@ -1,0 +1,78 @@
+{
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "build/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/auth",
+      "dest": "index.js"
+    },
+    {
+      "src": "/auth/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/post",
+      "dest": "index.js"
+    },
+    {
+      "src": "/post/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/chat",
+      "dest": "index.js"
+    },
+    {
+      "src": "/chat/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/message",
+      "dest": "index.js"
+    },
+    {
+      "src": "/message/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/comment",
+      "dest": "index.js"
+    },
+    {
+      "src": "/comment/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/chat",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "chat/:_id",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/login",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/signup",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/(.+)",
+      "dest": "build/$1"
+    }
+  ]
+}

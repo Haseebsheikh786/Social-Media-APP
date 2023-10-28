@@ -1,0 +1,170 @@
+.Container {
+    display: flex;
+    margin: 0 1rem;
+}
+
+#leftCol {
+    margin: 1.3rem 0;
+    flex: 0.3;
+}
+
+#mainCol {
+    background-color: rgb(228, 216, 216);
+    border-radius: 1rem;
+    color: black;
+    flex: 1;
+    margin: 0 1rem;
+}
+
+#rightCol {
+    flex: 0.3;
+}
+
+.icon {
+    height: 48px;
+    width: 48px;
+    padding: 2px;
+    border-radius: 50%;
+    margin-right: 1vw;
+    overflow: hidden;
+}
+
+.image-icon {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.friends {
+    display: flex;
+    justify-content: space-between;
+}
+
+.friendPost {
+    display: flex;
+    justify-content: space-between;
+    width: 48vw;
+}
+
+.addRemoveIcon {
+    margin-bottom: .2rem;
+    margin-left:1rem;
+    cursor: pointer;
+}
+
+.inputbox {
+    width: 50vw;
+}
+
+.location {
+    color: rgb(68, 70, 70);
+    line-height: .6rem;
+}
+
+.addRemoveicon {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.postContainer {
+    background-color: rgb(194, 190, 190);
+    border-radius: 1rem;
+
+    padding: 1rem 1rem .2rem 1rem;
+    margin: 1rem 0;
+}
+
+.postImage {
+    height: 100%;
+    width: 100%;
+}
+
+.number {
+    display: inline;
+    font-size: 1.2rem;
+}
+
+.LikeComment {
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-bottom: .3rem;
+}
+
+.FriendList {
+    display: none;
+}
+
+@media only screen and (max-width:420px) {
+    .Container {
+        margin: 0 .2rem;
+    }
+    
+    #leftCol {
+        display: none;
+    }
+
+    #mainCol {
+        margin: 0;
+    }
+
+    #rightCol {
+        display: none;
+    }
+
+    .FriendList {
+        display: block;
+    }
+
+    .inputbox {
+        width: 100%;
+    }
+
+    .friendPost {
+        width: 55vw;
+    }
+
+}
+
+@media only screen and (min-width:420px) and (max-width:600px) {
+
+    #leftCol {
+        display: none;
+    }
+
+    #mainCol {
+        margin: 0;
+    }
+
+    #rightCol {
+        display: none;
+    }
+
+    .FriendList {
+        display: block;
+    }
+
+    .inputbox {
+        width: 100%;
+    }
+
+    .friendPost {
+        width: 62vw;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:1100px) {
+    #leftCol {
+        flex: .6;
+    }
+
+ 
+    #rightCol {
+        display: none;
+    }
+
+}
