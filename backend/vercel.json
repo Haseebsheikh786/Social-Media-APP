@@ -11,6 +11,14 @@
   ],
   "routes": [
     {
+      "src": "/auth/signup",
+      "dest": "index.js"
+    },
+    {
+      "src": "/post/pic",
+      "dest": "index.js"
+    },
+    {
       "src": "/auth",
       "dest": "index.js"
     },

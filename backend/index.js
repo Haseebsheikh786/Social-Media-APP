@@ -31,7 +31,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 app.post("/auth/signup", upload.single("pic"), register);
-app.post("/post", upload.single("pic"), createPost);
+app.post("/post/pic", upload.single("pic"), createPost);
 app.use("/auth", require("./routes/authRoutes"));
 app.use("/post", require("./routes/postRoutes"));
 app.use("/comment", require("./routes/commentRoutes"));
